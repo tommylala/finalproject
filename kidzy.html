@@ -5,38 +5,15 @@
   	<meta name="description" content="Your description goes here">
   	<meta name="keywords" content="one, two, three">
 
-	<title>Kai La</title>
+	  <title>Kai La</title>
 
   	<!-- external CSS link -->
   	<link rel="stylesheet" href="css/reset.css" type="text/css">
   	<link rel="stylesheet" href="css/style.css" type="text/css">
   	<script src="js/index.js"></script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  
-   <script>
-    function lightbox(idx) {
-        //Show the slider wrapper
-        var ninjaSldr = document.getElementById("ninja-slider");
-        ninjaSldr.parentNode.style.display = "block";
 
-        //Then init the slider
-        //Note: The { initSliderByCallingInitFunc: true } option in the 
-        // ninja-slider.js tells the page not to initiate the slider
-        // unless the following init(idx) function is called.
-        nslider.init(idx);
-
-        //Then mimic clicking the fullscreen button to popup the modal
-        var fsBtn = document.getElementById("fsBtn");
-        fsBtn.click();
-    }
-
-    function fsIconClick(isFullscreen) {
-        //Note: fsIconClick is the default event handler of the fullscreen button
-        if (isFullscreen) {
-            var ninjaSldr = document.getElementById("ninja-slider");
-            ninjaSldr.parentNode.style.display = "none";
-        }
-    }
-</script>
+    </script>
 	</head>
 
     <body>
@@ -105,28 +82,28 @@
      <section class="model">
     
 
-        <div class="gallery" id="ninja-slider">
+        <div class="gallery">
           <a target="_blank" href="images/big/newborn.JPG">
           <img src="images/newborn.JPG" alt="Welcome Kai La" width="150" height="150">
           </a>
           <div class="desc">New Born!</div>
         </div>
 
-        <div class="gallery" id="ninja-slider">
+        <div class="gallery">
           <a target="_blank" href="images/big/one.JPG">
           <img src="images/one.JPG" alt="One Month" width="150" height="150">
           </a>
           <div class="desc">One Month</div>
         </div>
 
-        <div class="gallery" id="ninja-slider">
+        <div class="gallery">
           <a target="_blank" href="images/big/two.JPG">
           <img src="images/two.JPG" alt="Two Month" width="150" height="150">
           </a>
           <div class="desc">Two Month</div>
         </div>
 
-        <div class="gallery" id="ninja-slider">
+        <div class="gallery">
           <a target="_blank" href="images/big/three.JPG">
           <img src="images/three.JPG" alt="Three Month" width="150" height="150">
           </a>
