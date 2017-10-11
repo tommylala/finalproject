@@ -31,7 +31,6 @@
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-
 }
 
 .dropdown-content a {
@@ -116,14 +115,13 @@ h1,h2,h4,h5,h6 {
 
 }
 
-#touchdown{
+#touchdown {
   background-color: black;
   padding: 0px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-end;
-
 }
 .sociales {
   text-align:center;
@@ -181,14 +179,13 @@ h1,h2,h4,h5,h6 {
 }
 
 .issues {
-  width:100%
+  width:800px;
   height:350px;
-  overflow:hidden;
-  display: flex;
+/*  overflow:hidden;
+*/    display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-end;
-  vertical-align:bottom;
 }
 
 .issues li {
@@ -231,6 +228,7 @@ h1,h2,h4,h5,h6 {
 .issues li h1 {
   color:#fc0;
   font-size:48px;
+
   margin:20px 0;
   text-shadow:#000 1px 1px 2px;
 }
@@ -332,16 +330,3 @@ footer p {
   background-color: #000;
 }
 
-
-
-
-#ninja-slider .caption {
-    position:absolute;
-    top:100%;
-}
-
-/*#ninja-slider .slider-inner {padding-bottom: 100px!important;}
-#ninja-slider li {margin-bottom: 100px!important;}
-
-#ninja-slider ul {overflow:visible!important;}
-#ninja-slider li {/*overflow:hidden;*/}*/
