@@ -13,4 +13,7 @@ $(".cross").click(function() {
   $('.hamburger').show();
   $(".menu").slideToggle();
 
+
+
+
 });

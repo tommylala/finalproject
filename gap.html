@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+
+	<title>Blank Template</title>
+
+  	<!-- external CSS link -->
+  	<link rel="stylesheet" href="css/reset.css" type="text/css">
+  	<link rel="stylesheet" href="css/style.css" type="text/css">
+  	<script src="js/index.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  
+   <script>
+    function lightbox(idx) {
+        //Show the slider wrapper
+        var ninjaSldr = document.getElementById("ninja-slider");
+        ninjaSldr.parentNode.style.display = "block";
+
+        //Then init the slider
+        //Note: The { initSliderByCallingInitFunc: true } option in the 
+        // ninja-slider.js tells the page not to initiate the slider
+        // unless the following init(idx) function is called.
+        nslider.init(idx);
+
+        //Then mimic clicking the fullscreen button to popup the modal
+        var fsBtn = document.getElementById("fsBtn");
+        fsBtn.click();
+    }
+
+    function fsIconClick(isFullscreen) {
+        //Note: fsIconClick is the default event handler of the fullscreen button
+        if (isFullscreen) {
+            var ninjaSldr = document.getElementById("ninja-slider");
+            ninjaSldr.parentNode.style.display = "none";
+        }
+    }
+</script>
+	</head>
+
+    <body>
+
+    <header>
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">MENU &#9776;</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      </div>
+
+      <div id="kai">Kai La</div>
+    </header>
+
+
+    <section>
+      <img src="images/homepage.jpg" width="100%" />
+    </section>
+
+    <section id="touchdown">
+      <div align="center" id="black"></div> 
+
+      <div id="timeline">
+
+      <ul id="dates" align="center">
+        <li><a href="index.html">IKEA</a></li>
+        <li><a href="gap.html">GAP</a></li>
+        <li><a href="kidzy.html">Kidzy</a></li>
+        <li><a href="gar.html">Garanimals</a></li>
+      </ul>
+
+
+      <ul class="issues">
+        
+        <li>
+        <a target="_blank" href="images/big/gap.jpg">
+        <img src="images/gap.jpg" width="256" height="256" /></a>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </li>
+
+        <li><a target="_blank" href="images/big/ikea.jpg">
+        <img src="images/ikea.jpg" width="256" height="256" /></a>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </li>
+
+        
+        <li id="Kidzy">
+        <a target="_blank" href="images/big/kidzy.jpg">
+        <img src="images/kidzy.jpg" width="256" height="256" /></a>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </li>
+        <li id="Garanimals">
+        <a target="_blank" href="images/big/gar.png">
+        <img src="images/gar.png" width="256" height="256" /></a>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </li>
+        </ul></div>
+   
+    </section>
+
+    <section class="model">
+    
+
+        <div class="gallery" id="ninja-slider">
+          <a target="_blank" href="images/big/newborn.jpg">
+          <img src="images/newborn.jpg" alt="Welcome Kai La" width="150" height="150">
+          </a>
+          <div class="desc">New Born!</div>
+        </div>
+
+        <div class="gallery" id="ninja-slider">
+          <a target="_blank" href="images/big/one.jpg">
+          <img src="images/one.jpg" alt="One Month" width="150" height="150">
+          </a>
+          <div class="desc">One Month</div>
+        </div>
+
+        <div class="gallery" id="ninja-slider">
+          <a target="_blank" href="images/big/two.jpg">
+          <img src="images/two.jpg" alt="Two Month" width="150" height="150">
+          </a>
+          <div class="desc">Two Month</div>
+        </div>
+
+        <div class="gallery" id="ninja-slider">
+          <a target="_blank" href="images/big/three.jpg">
+          <img src="images/three.jpg" alt="Three Month" width="150" height="150">
+          </a>
+          <div class="desc">Three Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/four.jpg">
+          <img src="images/four.jpg" alt="Four Month" width="150" height="150">
+          </a>
+          <div class="desc">Four Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/five.jpg">
+          <img src="images/five.jpg" alt="Five Month" width="150" height="150">
+          </a>
+          <div class="desc">Five Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/six.jpg">
+          <img src="images/six.jpg" alt="Six Month" width="150" height="150">
+          </a>
+          <div class="desc">Six Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/seven.jpg">
+          <img src="images/seven.jpg" alt="Seven Month" width="150" height="150">
+          </a>
+          <div class="desc">Seven Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/eight.jpg">
+          <img src="images/eight.jpg" alt="Eight Month" width="150" height="150">
+          </a>
+          <div class="desc">Eight Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/nine.jpg">
+          <img src="images/nine.jpg" alt="Nine Month" width="150" height="150">
+          </a>
+          <div class="desc">Nine Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/ten.jpg">
+          <img src="images/ten.jpg" alt="Ten Month" width="150" height="150">
+          </a>
+          <div class="desc">Ten Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/eleven.jpg">
+          <img src="images/eleven.jpg" alt="Eleven Month" width="150" height="150">
+          </a>
+          <div class="desc">Eleven Month</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="images/big/twelve.jpg">
+          <img src="images/twelve.jpg" alt="One Year" width="150" height="150">
+          </a>
+          <div class="desc">Twelve Month</div>
+        </div>
+    </section>
+
+    <footer>
+
+      <ul>
+          <li><a href="#"><img src="images/twitter.png" alt="Twitter logo" width="30px" height="30px"></a></li>
+          <li><a href="#"><img src="images/facebook.png" alt="Facebook logo" width="30px" height="30px"></a></li>
+      </ul>
+          <p class="copyright">Copyright 2017. Kai La.</p>
+    </footer>
+
+	</body>
+	</html>
